@@ -1,0 +1,16 @@
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook Replyer.csprojResolveAssemblyReference.cache
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook_Replyer.Properties.Resources.resources
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook Replyer.csproj.GenerateResource.cache
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook Replyer.csproj.CoreCompileInputs.cache
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\Outlook Replyer.exe
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\Outlook Replyer.pdb
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook Replyer.exe
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook Replyer.pdb
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\RestSharp.dll
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\TechTalk.JiraRestClient.dll
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\bin\Debug\RestSharp.xml
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook_Replyer.Main.resources
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook_Replyer.LoginForm.resources
+C:\Users\lpicazio\source\repos\Outlook Replyer\Outlook Replyer\obj\Debug\Outlook_Replyer.Options.resources
