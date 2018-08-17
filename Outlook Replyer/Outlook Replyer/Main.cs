@@ -88,7 +88,7 @@ namespace Outlook_Replyer
         private static void GetRequest()
         {
             string html = string.Empty;
-            string url = @"http://jiracorebr.csintra.net/rest/api/2/issue/SC-33291";
+            string url = @"http://xxxxx.xxxxxx.net/rest/api/2/issue/SC-33291";
             string mergedCredentials = string.Format("{0}:{1}", "lpicazio", pwd);
             byte[] byteCredentials = UTF8Encoding.UTF8.GetBytes(mergedCredentials);
             string base64Credentials = Convert.ToBase64String(byteCredentials);
@@ -167,7 +167,7 @@ namespace Outlook_Replyer
 
 
                 string json = criaJson(description, summary, Category, ReqBy, Analista, SubCategory, SubCategory2, SubCategory3, SubCategory4);
-                string url = "http://jiracorebr.csintra.net/rest/api/2/issue";
+                string url = "http://xxxx.xxxx.net/rest/api/2/issue";
                 string respReq = SendRequest(json, url);
 
                 string nTicket = respReq.Substring(respReq.IndexOf("SC-"), 8); // Tira o SC do ticket
@@ -197,7 +197,7 @@ namespace Outlook_Replyer
                 string SubCategory4 = "N/A";
 
                 string json = criaJson(description, summary, Category, reqBy, Analista, SubCategory, SubCategory2, SubCategory3, SubCategory4);
-                string url = "http://jiracorebr.csintra.net/rest/api/2/issue";
+                string url = "http://xxxx.xxxx.net/rest/api/2/issue";
 
                 string respReq = SendRequest(json, url);
                 string nTicket = respReq.Substring(respReq.IndexOf("SC-"), 8);
@@ -225,7 +225,7 @@ namespace Outlook_Replyer
                 string SubCategory4 = "N/A";
 
                 string json = criaJson(description, summary, Category, name, Analista, SubCategory, SubCategory2, SubCategory3, SubCategory4);
-                string url = "http://jiracorebr.csintra.net/rest/api/2/issue";
+                string url = "http://xxxx.xxxx.net/rest/api/2/issue";
                 string respReq = SendRequest(json, url);
                 string nTicket = respReq.Substring(respReq.IndexOf("SC-"), 8);
                 string sc = "SC-";
@@ -256,7 +256,7 @@ namespace Outlook_Replyer
                 text = text.Substring(text.IndexOf("From"));
                 text = text.Substring(0, text.IndexOf("From", 6));
                 string json = "{\"update\":{\"comment\":[{\"add\":{\"body\":\""+text+"\"}}]},\"transition\":{\"id\":\"31\"}}";
-                SendRequest(json, "http://jiracorebr.csintra.net/rest/api/2/issue/SC-" + nticket + "/transitions");
+                SendRequest(json, "http://xxx.xxxx.net/rest/api/2/issue/SC-" + nticket + "/transitions");
                 string texto = "Ticket <b>" + nticket + "</b> atualizado com a aprovação.";
                 resp.HTMLBody = geraHTML(resp.HTMLBody, texto);
                 resp.Display();
@@ -296,7 +296,7 @@ namespace Outlook_Replyer
             Outlook.MailItem resp = mail.ReplyAll();
             string text = cortaComment( resp.Body);
             string json = "{\"body\":\"" + text + "\"}";
-            SendRequest(json, "http://jiracorebr.csintra.net/rest/api/2/issue/SC-" + nticket + "/comment");
+            SendRequest(json, "http://xxxx.xxxxx.net/rest/api/2/issue/SC-" + nticket + "/comment");
             string texto = "Seu comentario foi adicionado ao ticket <b>" + nticket + "</b> para o analista responsável verificar e te dar um retorno sobre o proceso.";
             resp.HTMLBody = geraHTML(resp.HTMLBody, texto);
             resp.Display();
@@ -421,7 +421,7 @@ namespace Outlook_Replyer
             //}
 
             //-------------------------------------abre planilha e mostra analista-----------------------------//
-            string path = @"\\csao11p20011c\IT\PCHardw\INFRA\Controles\Levantamentos\Controle_de_Hardware_e_Usuários.xlsx";
+            string path = @"\\xxxxx\IT\PCHardw\INFRA\Controles\Levantamentos\Controle_de_Hardware_e_Usuários.xlsx";
             string excelConnStr = string.Empty;
             OleDbCommand excelCommand = new OleDbCommand();
             OleDbDataAdapter excelDataAdapter = new OleDbDataAdapter();
